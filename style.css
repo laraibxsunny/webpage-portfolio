@@ -41,3 +41,51 @@ nav a:hover {
 [aria-current="page"] {
   text-decoration: underline;
 }
+
+#MyPicture {
+  max-width: 100%;
+  width: 300px;
+  display: flex;
+}
+
+.navbar {
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.links {
+  color: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+#bowlingAlley {
+  max-width: 100%;
+  width: 300px;
+}
+
+.HobbyInfo {
+  font-size: small;
+}
+
+#coachMario {
+  max-width: 100%;
+  width: 400px;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.HobbyPics {
+  max-width: 100%;
+  width: 300px;
+}
+
+.main {
+  display: flex;
+}
