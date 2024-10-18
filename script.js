@@ -1,9 +1,15 @@
-// You can replace the contents of this file with your own JavaScript code.
+const button = document.querySelector("button");
 
-// For a challenge, why not try adding the current year to the footer?
-// It's currently hard-coded, but this way it would update automatically.
-// You can use new Date().getFullYear() to get the current year.
+function toggleFunFact() {
+  const isExpanded = button.getAttribute("aria-expanded");
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear
+  if (isExpanded === "true") {
+    button.setAttribute("aria-expanded", "false");
+    button.nextElementSibling.setAttribute("hidden", "");
+  } else if (isExpanded === "false") {
+    button.setAttribute("aria-expanded", "true");
+    button.nextElementSibling.removeAttribute("hidden");
+  }
+}
 
-console.log("Hello, World!");
+button.addEventListener("click", toggleFunFact);

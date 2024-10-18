@@ -5,10 +5,10 @@
 
 /* Sets the minimum height of the body element to 100% of the viewport height, increases the line height for better legibility, and changes the font family to a system font stack. */
 body {
-  min-height: 100vh;
   line-height: 1.5;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: lightyellow;
 }
 
 /* Reduces the line height of heading elements and wraps their text in a way that best balances the number of characters on each line, enhancing layout quality and legibility. */
@@ -55,7 +55,7 @@ nav a:hover {
 }
 
 .links {
-  color: yellow;
+  color: light yellow;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -66,7 +66,7 @@ nav a:hover {
   width: 300px;
 }
 
-.HobbyInfo {
+.Info {
   font-size: small;
 }
 
@@ -84,8 +84,52 @@ nav a:hover {
 .HobbyPics {
   max-width: 100%;
   width: 300px;
+  background-color: darkgoldenrod;
+  margin: 30px;
+  padding: 10px;
 }
 
 .main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 70rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.footer {
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.ProjectDesc {
+  max-width: 100%;
+  width: 300px;
+  background-color: darkgoldenrod;
+  margin: 30px;
+  padding: 10px;
+}
+
+.padding {
+  margin: 10px;
 }
